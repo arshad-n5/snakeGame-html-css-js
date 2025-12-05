@@ -14,6 +14,7 @@ let xVelocity = unitSize;
 let yVelocity = 0;
 let foodX;
 let foodY;
+let flag=0
 let score = 0;
 let snake = [
   { x: unitSize * 4, y: 0 },
@@ -25,7 +26,13 @@ let snake = [
 window.addEventListener("keydown", changeDirection);
 resetBtn.addEventListener("click", resetGame);
 
-gameStart();
+function start(){
+    gameStart();
+    flag=1
+    if(flag==1){
+        startBtn.style.display="none"
+    }
+}
 
 function gameStart() {
   running = true;
