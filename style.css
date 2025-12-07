@@ -1,12 +1,18 @@
 #gameContainer {
   text-align: center;
 }
+body{
+  background-color: black;
+  height: 90vh;
+}
 
 #gameBoard {
-  border: 3px solid;
+  border: 3px solid white;
+
 }
 #scoreText {
   font-family: "Permanent Marker", cursive;
+  color: white;
   font-size: 100px;
 }
 #resetBtn {
